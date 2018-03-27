@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+    - dev
+server:
+  port: 7101
+---
+spring:
+  profiles: dev
+  application: 
+    name: microconfig-dev
+---
+spring:
+  profiles: default
+  application: 
+    name: microconfig-default
+---
+spring:
+  profiles: test
+  application: 
+    name: microconfig-test
+    
